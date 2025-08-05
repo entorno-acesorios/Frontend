@@ -1,6 +1,6 @@
 /* Footer.module.css */
-
 /* Contêiner principal do footer */
+
 .footer {
   background-color: var(--brown);
   color: var(--soft-white);
@@ -144,3 +144,4 @@
     gap: 1rem;
   }
 }
+

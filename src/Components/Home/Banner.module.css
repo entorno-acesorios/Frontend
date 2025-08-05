@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .banner {
   width: 100%;
   background-color: var(--light-brown);
@@ -37,3 +38,44 @@
 .botao:hover {
   background-color: var(--white);
 }
+=======
+.banner {
+  width: 100%;
+  background-color: var(--light-brown);
+  color: var(--soft-white);
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.conteudo {
+  max-width: 800px;
+}
+
+.conteudo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.conteudo p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.botao {
+  padding: 0.8rem 1.6rem;
+  background-color: var(--soft-white);
+  color: var(--black);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: var(--white);
+}
+>>>>>>> c8762d3 (Primeiro Commit com atualizações e criações da estrutura inicial do projeto do Front-end)

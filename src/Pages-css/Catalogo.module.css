@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .catalogo {
   padding: 4rem 2rem;
   background-color: var(--soft-white);
@@ -101,3 +102,108 @@
   font-style: italic;
   margin-top: 40px;
 }
+=======
+.catalogo {
+  padding: 4rem 2rem;
+  background-color: var(--soft-white);
+  color: var(--black);
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.titulo h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.titulo p {
+  color: var(--coffe-brown);
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.botaoFiltro {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--coffe-brown);
+  background: transparent;
+  color: var(--coffe-brown);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botaoFiltro:hover,
+.botaoFiltro.ativo {
+  background-color: var(--coffe-brown);
+  color: var(--soft-white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.imagem {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.info p {
+  font-size: 1rem;
+  color: var(--coffe-brown);
+}
+
+.loading {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.spinner {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #f44336;
+  border-radius: 50%;
+}
+
+.vazio {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  margin-top: 40px;
+}
+>>>>>>> c8762d3 (Primeiro Commit com atualizações e criações da estrutura inicial do projeto do Front-end)

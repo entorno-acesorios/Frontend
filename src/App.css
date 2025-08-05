@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset de estilos */
 * {
   margin: 0;
@@ -204,3 +205,211 @@ footer {
     margin-bottom: 1rem;
   }
 }
+=======
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App.css */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F4E3;
+}
+
+/* Fonte base e cor de fundo */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F8F4E3;
+  color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #8C5E58;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  height: 100dvh;
+  background-color: var(--yellow);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Botões */
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--light-brown);
+  color: #FFF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--light-brown);
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #333;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #8C5E58;
+}
+
+nav .menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav .menu a {
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+nav .menu a:hover {
+  color: #8C5E58;
+}
+
+/* Header */
+header {
+  background-color: #FFF;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 60vh;
+  background: url('path-to-image.jpg') center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Cartões de Produto */
+.product-card {
+  background: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card .details {
+  padding: 1rem;
+}
+
+.product-card .details h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-card .details p {
+  color: #8C5E58;
+}
+
+/* Footer */
+footer {
+  background-color: #8C5E58;
+  color: #FFF;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Fade-In Animation */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  nav .menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .product-card {
+    margin-bottom: 1rem;
+  }
+}
+>>>>>>> c8762d3 (Primeiro Commit com atualizações e criações da estrutura inicial do projeto do Front-end)
