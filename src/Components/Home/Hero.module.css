@@ -1,0 +1,25 @@
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: var(--light-brown);
+  color: var(--soft-white);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  padding: 0.8rem 1.5rem;
+  background: var(--soft-white);
+  color: var(--black);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}

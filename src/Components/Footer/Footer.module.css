@@ -1,0 +1,146 @@
+/* Footer.module.css */
+
+/* Contêiner principal do footer */
+.footer {
+  background-color: var(--brown);
+  color: var(--soft-white);
+  padding: 2rem 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Seção superior do footer (links e newsletter) */
+.topSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.linksGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.linksGroup ul {
+  list-style: none;
+  padding: 0;
+}
+
+.linksGroup li {
+  margin: 0.5rem 0;
+}
+
+.linksGroup a {
+  color: var(--soft-white);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.linksGroup a:hover {
+  color: var(--orange);
+}
+
+/* Estilo da seção de Newsletter */
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 300px;
+}
+
+.newsletter input {
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid var(--light-brown);
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.newsletter button {
+  padding: 0.8rem;
+  background-color: var(--light-green1);
+  border: none;
+  border-radius: 4px;
+  color: var(--soft-white);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: var(--light-green2);
+}
+
+/* Logo da marca */
+.brand {
+  margin-top: 2rem;
+}
+
+.brand h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--soft-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Informações de rodapé */
+.bottomInfo {
+  background-color: var(--dark-green1);
+  padding: 1rem 0;
+  color: var(--soft-white);
+}
+
+.bottomInfo p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.bottomInfo .links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.bottomInfo .links a {
+  font-size: 0.9rem;
+  color: var(--soft-white);
+  text-decoration: none;
+}
+
+.bottomInfo .links a:hover {
+  color: var(--orange);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .topSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linksGroup {
+    text-align: center;
+  }
+
+  .newsletter {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .bottomInfo .links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,163 @@
+/*.header {
+  width: 100%;
+  background-color: var(--white);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--black);
+  letter-spacing: 1px;
+}
+
+/* Navegação */
+/*.nav {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  background-color: var(--white);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--light-brown);
+}
+
+.nav.ativo {
+  display: flex;
+}
+
+/* Ações no canto direito (ícone de sacola, login, etc) */
+/*.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.actions a,
+.actions button {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.actions a:hover {
+  color: var(--light-brown);
+}
+
+/* Ícone de menu mobile */
+/*.menuToggle {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--black);
+  display: block;
+}
+
+/* Estilo para desktop */
+/*@media (min-width: 768px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    width: auto;
+  }
+
+  .menuToggle {
+    display: none;
+  }
+
+  .actions {
+    gap: 1.5rem;
+  }
+
+  .iconBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--black);
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+  }
+
+  .iconBtn:hover {
+    color: var(--light-brown);
+  }
+} */
+/* Header.module.css */
+.header {
+  background-color: var(--brown);
+  color: white;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menuToggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.ativo {
+  display: block;
+}
