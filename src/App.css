@@ -207,7 +207,7 @@ footer {
 }
 =======
 /* Reset de estilos */
-* {
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -215,69 +215,75 @@ footer {
 
 /* App.css */
 
-html, body, #root {
-  height: 100%;
+/* html, body, #root {
+  height: 100dvh;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
 
-#root {
+/* #root {
   display: flex;
   flex-direction: column;
-  background-color: #F8F4E3;
 }
 
 /* Fonte base e cor de fundo */
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #F8F4E3;
-  color: #333;
-  line-height: 1.6;
+/* body {
+  font-family: 'Popins', sans-serif;
+  background-color: var(--light-brown);
+  color: var(--soft-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* Links */
-a {
+/* a {
   text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
+  border: 0.3rem;
+  color: var(--light-brown);
+  transition: color 0.5s ease;
 }
 
 a:hover {
-  color: #8C5E58;
+  color: var(--coffe-brown);
 }
 
 /* Container */
-.container {
-  width: 100%;
+/* .container {
+  width: 100dvh;
   height: 100dvh;
-  background-color: var(--yellow);
-  margin: 0 auto;
+  margin: 0;
   padding: 1rem;
+  background-color: var(--light-brown);
+
+}
+._container_19wxm_21{
+  background-color: var(--soft-white);
 }
 
+._logo_19wxm_43{
+  color: var(--light-brown);
+}
 /* Botões */
-button {
+/* button {
   padding: 0.6rem 1.2rem;
   background-color: var(--light-brown);
-  color: #FFF;
+  color: var(--light-brown);
   border: none;
-  border-radius: 6px;
+  border-radius:1rem;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
 
 button:hover {
-  background-color: var(--light-brown);
+  background-color: var(--coffe-brown);
 }
 
 /* Títulos */
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
+/* h1, h2, h3, h4 {
+  font-family: 'Poppins', Helvetica, sans-serif;
   font-weight: 600;
-  color: #333;
+  color: var(--coffe-brown);
 }
 
 h1 {
@@ -286,13 +292,15 @@ h1 {
 }
 
 /* Navegação */
-nav {
+/* nav {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  background-color: #FFF;
+  color: var(--light-brown);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: auto;
 }
 
 nav .logo {
@@ -317,7 +325,7 @@ nav .menu a:hover {
 }
 
 /* Header */
-header {
+/* header {
   background-color: #FFF;
   padding: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -325,7 +333,7 @@ header {
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
   position: relative;
   height: 60vh;
   background: url('path-to-image.jpg') center center/cover no-repeat;
@@ -343,7 +351,7 @@ header {
 }
 
 /* Cartões de Produto */
-.product-card {
+/* .product-card {
   background: #FFF;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -374,7 +382,7 @@ header {
 }
 
 /* Footer */
-footer {
+/* footer {
   background-color: #8C5E58;
   color: #FFF;
   padding: 2rem 0;
@@ -382,7 +390,7 @@ footer {
 }
 
 /* Fade-In Animation */
-.fade-in {
+/* .fade-in {
   animation: fadeIn 0.6s ease-in-out;
 }
 
@@ -398,7 +406,7 @@ footer {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+/*@media (min-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -410,6 +418,235 @@ footer {
 
   .product-card {
     margin-bottom: 1rem;
+  }
+}*/
+
+
+/* Reset e Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: 'Poppins', Helvetica, sans-serif;
+
+  --coffe-brown: #2f100c;
+  --brown: #8d4514;
+  --light-brown: #a1673f;
+  --light-green1: #71b35f;
+  --light-green2: #36a849;
+  --dark-green1: #034d28;
+  --dark-green2: #0b6d34;
+  --orange: #e66e2a;
+  --yellow: #e0dc5d;
+  --black: #111;
+  --soft-white: #f1f1f1;
+
+  --text-default: #f1f1f1;
+  --text-underline: var(--text-default);
+
+  --accent: var(--light-green2);
+  --background: var(--soft-white);
+  --foreground: var(--coffe-brown);
+}
+
+/* Estrutura geral */
+html,
+body,
+#root {
+  height: 100%;
+  font-family: var(--font-family);
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a {
+  color: var(--brown);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--dark-green2);
+}
+
+/* Botões */
+button {
+  background-color: var(--coffe-brown);
+  color: var(--soft-white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--brown);
+  transform: scale(1.05);
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: var(--coffe-brown);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--soft-white);
+  color: var(--coffe-brown);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav .logo {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--brown);
+}
+
+nav .menu {
+  display: flex;
+  gap: 2rem;
+}
+
+nav .menu a {
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+nav .menu a:hover {
+  color: var(--dark-green2);
+}
+
+/* Hero Section */
+.hero {
+  background: url('/path-to-image.jpg') center/cover no-repeat;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--soft-white);
+  padding: 2rem;
+  animation: fadeInHero 1s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/* Destaques de Produto */
+.product-card {
+  background: var(--soft-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.04);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-card .details {
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-card .details h3 {
+  color: var(--coffe-brown);
+  font-size: 1.1rem;
+}
+
+.product-card .details span {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: var(--coffe-brown);
+  color: var(--soft-white);
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Animação */
+@keyframes fadeInHero {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInHero 0.6s ease-in-out;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav .menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .product-card {
+    margin-bottom: 1.5rem;
   }
 }
 >>>>>>> c8762d3 (Primeiro Commit com atualizações e criações da estrutura inicial do projeto do Front-end)

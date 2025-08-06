@@ -33,7 +33,7 @@ import SearchBar from '../Components/Search/SearchBar.jsx';
         <Hero />
         <DropdownMenu />
         <SearchBar />
-        <Banner />
+        
         <ProductHighlights />
       </main>
     );

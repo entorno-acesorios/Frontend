@@ -2,11 +2,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
- /* box-sizing: border-box;
-*/
+  box-sizing: border-box;
 }
 
 :root {
+  --font-family:'Poppins', Helvetica, sans-serif;
   font-family: 'Poppins', Helvetica, sans-serif;
   text-align: center;
   --coffe-brown: #2f100c; 
@@ -30,11 +30,3 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Estilo base */
-body {
-  background-color: var(--soft-white);
-  color: var(--black);
-  font-size: var(--font-size);
-  line-height: 1.6;
-  min-height: 100vh;
-}

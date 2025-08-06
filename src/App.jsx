@@ -1,17 +1,19 @@
   import './App.css';
-  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+  import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
   import Header from './Components/Header';
+  import ProductHighlights from './Components/Home/ProductHighlights';
   import Footer from './Components/Footer';
   import Home from './Pages/PaginaInicial.jsx';
   import Sobre from './Pages/SobreNos.jsx';
   import Catalogo from './Pages/Catalogo';
   import Comunidade from './Pages/Comunidade';
   import Contato from './Pages/Contato';
+import PaginaInicial from './Pages/PaginaInicial.jsx';
 
   function App() {
     return (
       <div>
-        <Router>
+        <BrowserRouter>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -21,7 +23,7 @@
             <Route path="/contato" element={<Contato />} />
           </Routes>
           <Footer />
-        </Router>
+        </BrowserRouter>
       </div>
     );
   }

@@ -59,9 +59,9 @@ function DropdownMenu() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
           >
-            <li><a href="/colecoes/afeto">Afeto</a></li>
-            <li><a href="/colecoes/raízes">Raízes</a></li>
-            <li><a href="/colecoes/territórios">Territórios</a></li>
+            <li><a href="/colecoes/afeto">Miriri</a></li>
+            <li><a href="/colecoes/raízes">Lagón</a></li>
+            <li><a href="/colecoes/territórios">Cajuina</a></li>
           </motion.ul>
         )}
       </AnimatePresence>

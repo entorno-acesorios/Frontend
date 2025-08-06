@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*.header {
   width: 100%;
   background-color: var(--white);
@@ -166,50 +167,78 @@
 /*.header {
   width: 100%;
   background-color: var(--white);
+=======
+/* Variáveis da paleta devem estar declaradas globalmente em :root */
+
+.header {
+  background-color: var(--coffe-brown);
+  color: var(--soft-white);
+>>>>>>> 88a29b9 (Ajustando index.jsx do Footer e Header)
   padding: 1rem 0;
-  position: sticky;
+  position: fixed;
+  height: 4rem;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .logo {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
-  color: var(--black);
   letter-spacing: 1px;
+  color: var(--soft-white);
 }
 
-/* Navegação */
-/*.nav {
+/* Botão do menu hambúrguer (mobile) */
+.menuToggle {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--soft-white);
+  display: block;
+}
+
+/* Menu de navegação padrão (oculto no mobile) */
+.nav {
   display: none;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-
-  background-color: var(--white);
+  background-color: var(--coffe-brown);
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   padding: 1rem;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--soft-white);
   font-weight: 500;
   font-size: 0.95rem;
   transition: color 0.3s ease;
@@ -219,111 +248,61 @@
   color: var(--light-brown);
 }
 
+/* Ativa o menu mobile */
 .nav.ativo {
   display: flex;
 }
 
-/* Ações no canto direito (ícone de sacola, login, etc) */
-/*.actions {
+/* Ícones ou ações extras (como sacola, login, etc) */
+.actions {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .actions a,
 .actions button {
-  text-decoration: none;
-  color: var(--black);
-  font-size: 1.2rem;
   background: none;
   border: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--soft-white);
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.actions a:hover {
+.actions a:hover,
+.actions button:hover {
   color: var(--light-brown);
 }
 
-/* Ícone de menu mobile */
-/*.menuToggle {
-  background: none;
-  border: none;
-  font-size: 1.6rem;
-  cursor: pointer;
-  color: var(--black);
-  display: block;
-}
-
-/* Estilo para desktop */
-/*@media (min-width: 768px) {
-  .container {
-    flex-wrap: nowrap;
+/* Estilos a partir de tablet para cima */
+@media (min-width: 768px) {
+  .menuToggle {
+    display: none; /* esconde o ícone do menu em telas maiores */
   }
 
   .nav {
     display: flex !important;
-    position: static;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    position: static;
+    background: none;
     padding: 0;
-    width: auto;
+    width: 100dvh;
+    gap: 2rem;
   }
 
-  .menuToggle {
-    display: none;
+  .nav a {
+    font-size: 1rem;
+  }
+
+  .nav.ativo {
+    display: flex;
   }
 
   .actions {
     gap: 1.5rem;
   }
-
-  .iconBtn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--black);
-    font-size: 1.3rem;
-    transition: color 0.3s ease;
-  }
-
-  .iconBtn:hover {
-    color: var(--light-brown);
-  }
-} */
-/* Header.module.css */
-.header {
-  background-color: var(--brown);
-  color: white;
-  padding: 1rem;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.menuToggle {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: white;
-}
-
-.nav {
-  display: flex;
-  gap: 1rem;
-}
-
-.ativo {
-  display: block;
 }
 >>>>>>> c8762d3 (Primeiro Commit com atualizações e criações da estrutura inicial do projeto do Front-end)

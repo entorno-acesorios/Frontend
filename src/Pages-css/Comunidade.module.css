@@ -112,7 +112,7 @@
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
-  color: #2d110b;
+  color: var(--coffe-brown);
 }
 
 .titulo {
@@ -136,7 +136,7 @@
   text-align: center;
   padding: 1rem;
   border-radius: 12px;
-  background-color: #fff7f4;
+  background-color: var(--soft-white);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -163,13 +163,13 @@
   background: none;
   border: none;
   font-size: 2rem;
-  color: #2d110b;
+  color: var(--coffe-brown);
   cursor: pointer;
   transition: color 0.3s;
 }
 
 .seta:hover {
-  color: #d45b28;
+  color: var(--orange);
 }
 
 .artistasSection {

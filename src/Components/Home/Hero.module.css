@@ -26,11 +26,11 @@
 }
 =======
 .hero {
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
   text-align: center;
   background: var(--light-brown);
   color: var(--soft-white);
-}
+}e
 
 .hero h1 {
   font-size: 2rem;
