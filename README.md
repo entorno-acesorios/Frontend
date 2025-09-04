@@ -1,1 +1,1 @@
-# API - ENTORNO ACESSÓRIOS 
+# Front-end do sistema ENTORNO ACESSÓRIOS + Ecommerce 
